@@ -12,7 +12,7 @@ SFML_INCLUDE := -Isrc/include
 SFML_LINKER := -Lsrc/lib
 
 # Source files
-SRCS := main.cpp
+SRCS := $(wildcard *.cpp)
 
 # Object files
 OBJS := $(SRCS:.cpp=.o)
